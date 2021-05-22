@@ -1,0 +1,77 @@
+.card{
+  width: 100%;
+  margin-bottom: 2.4rem ;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.cardImg{
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.cardAuthor{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 1rem 2rem ;
+  border-bottom-left-radius: .8rem;
+  color: var(--color-secondary);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-top-right-radius: .8rem;
+}
+.cardDate{
+  color: var(--color-secondary);
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+}
+.cardImg{
+  min-height: 220px;
+}
+.cardImg img{
+  height: 100%;
+  border-top-left-radius: .8rem ;
+  border-top-right-radius: .8rem ;
+  max-height: 220px;
+  min-height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+.cardMain{
+  padding: 1rem 1rem  2.5rem  1rem ;
+  border-bottom-left-radius: 1rem ;
+  border-bottom-right-radius: 1rem ;
+}
+.cardTitle{
+  font-size: 1.8rem;
+  font-weight: 600;
+
+}
+.cardTitle a{
+  color: #191d3a;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-height: 5rem;
+  overflow: hidden;
+  min-height: 5rem;
+  line-height: 2.5rem;
+}
+.cardTitle a:hover {
+  color: #bf1650;
+}
+.cardDesc{
+  margin: 2rem 0 1rem 0;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    min-height: 7.7rem;
+}

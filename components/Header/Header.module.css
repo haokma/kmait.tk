@@ -1,0 +1,150 @@
+
+.headerTop{
+  background-color: var(--color-bg);
+  padding: 1rem 0;
+}
+.headerImg{
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.headerImg img {
+  width: 100px;
+}
+.headerTitle{
+  text-align: center;
+  color: var(--color-text-primary);
+  font-size: 1.6rem;
+  letter-spacing: 1.6;
+  padding: .5rem 0 0 0;
+}
+
+.headerNavList{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+}
+.headerNavItem{
+
+  margin:  0 1.2rem ;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s ease;
+  text-transform: uppercase;
+}
+.headerNavItem a{
+  color: var(--color-text-primary);
+}
+.headerNavItem a:hover{
+  color: var(--color-secondary);
+}
+.headerNavItem.active a{
+  color: var(--color-secondary);
+}
+.headerMain{
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--color-primary);
+  box-shadow: 2px 2px 2px rgb(0 0 0 / 8%);
+  padding: 1rem 0;
+}
+.headerFlex{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.headerSearch{
+  display: none;
+  cursor: pointer;
+}
+.headerFlex{
+  color: var(--color-text-primary);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.headerButton{
+  color: var(--color-text-primary);
+  font-size: 3.5rem;
+  display: none;
+}
+.modal{
+  display: none;
+}
+.headerContact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.headerContactIten{
+  color: var(--color-text-primary);
+  font-size: 3rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.headerContactIten a i{
+  cursor: pointer;
+}
+.headerLogo {
+  cursor: pointer;
+}
+.headerLogo h1{
+  font-size: 3rem;
+  margin: 0;
+  color: var(--color-text-primary);
+}
+@media (max-width : 992px) {
+  .modal{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    cursor: pointer;
+  }
+  .modal.active{
+    display: block;
+  }
+  .headerNavItem{
+    margin:  1.4rem 0;
+  }
+  .headerNavItem a{
+    color: #fff;
+  }
+  .headerNavList{
+    position: fixed;
+    top:0 ;
+    left: 0;
+    width: 300px;
+    background-color: #191d3a;
+    height: 100%;
+    z-index: 1000;
+    transform: translateX(-300px);
+    transition: .2s ease;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10rem 0;
+  }
+  .headerNavList.active{
+    transform: translateX(0);
+  }
+  .headerButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .headerFlex{
+    justify-content: space-between;
+  }
+  .headerSearch{
+    display: block;
+  }
+
+}

@@ -1,0 +1,24 @@
+.cardHeadRight{
+  padding: 2rem 0;
+}
+.cardHeadTitle{
+  color: var(--color-text-primary);
+  font-size: 3rem;
+  line-height: 4.2rem;
+}
+.cardHeadTitle a{
+  color: var(--color-text-primary);
+}
+.cardHeadTitle a:hover{
+  color: var( --color-secondary);
+}
+.cardHeadImg img{
+  border-radius: 1rem;
+}
+.cardHeadDesc{
+  font-size: 1.6rem;
+  color: var(--color-text-primary);
+  line-height: 2.8rem;
+  letter-spacing: 1.4;
+  margin-top: 2rem;
+}
