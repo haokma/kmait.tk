@@ -1,4 +1,5 @@
 
+import { message, Spin } from 'antd';
 import Head from 'next/head';
 import { useState } from 'react';
 import blogApi from '../apis/blogApi';
@@ -30,6 +31,10 @@ export default function Home({ data, totalPage }) {
       .then((res) => {
         setBlogs([...blogs, ...res.data.blogs])
         setPage(page + 1)
+      })
+      .catch(() => {
+
+        message.error('Cõ lỗi xảy ra')
       })
   }
   return (
@@ -74,7 +79,7 @@ export default function Home({ data, totalPage }) {
             page < totalPage ? (<div className="load-more">
               <button onClick={() => loadMore()}>
                 Xem thêm
-            </button>
+              </button>
             </div>) : null
           }
         </div>

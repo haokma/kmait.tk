@@ -67,7 +67,7 @@ const Blog = ({ blog = {}, relatedBlogs }) => {
         <meta property="og:type" content="webiste" />
         <meta property="og:url" content={`${'https://www.kmait.tk/'}blogs/${blog.slug}`} />
         <meta property="og:site_name" content={`${'KmaIT.Com'}`} />
-        <meta property="og:image" content={`${blog.photo[0].img || 'https://www.kmait.tk/static/images/haolux.jpg'}`} />
+        <meta property="og:image" content={`${blog.photo[0].img}`} />
         <meta property="og:image:secure_url" content={`${blog.photo[0].img || 'https://www.kmait.tk/static/images/haolux.jpg'}`} />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="fb:app_id" content={`${'123124'}`} />
