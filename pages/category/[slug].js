@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import blogApi from '../../apis/blogApi'
 import { categoriesApi } from '../../apis/categoriesApi'
 import Card from '../../components/Card'
@@ -54,6 +54,9 @@ const CategoryPage = ({ data, slug, totalPage }) => {
         setPage(page + 1)
       })
   }
+  useEffect(() => {
+    setBlogs(data)
+  }, [router.query.slug])
   return (
     <>
       <Head>

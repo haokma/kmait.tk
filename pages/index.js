@@ -46,8 +46,8 @@ export default function Home({ data, totalPage }) {
           content="Blog chia sẻ kiến thức Lập trình và An toàn thông tin"
         />
         <meta property="og:type" content="webiste" />
-        <meta property="og:image" content={`${'https://www.kmait.tk/'}/static/images/haolux.jpg`} />
-        <meta property="og:image:secure_url" content={`${'https://www.kmait.tk/'}/static/images/haolux.jpg`} />
+        <meta property="og:image" content={`${'https://www.kmait.tk/'}static/images/haolux.jpg`} />
+        <meta property="og:image:secure_url" content={`${'https://www.kmait.tk/'}static/images/haolux.jpg`} />
         <meta property="og:image:type" content="image/jpg" />
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet' />
         <title>KmaIT - Lập trình & An Toàn Thông Tin  Blog</title>
