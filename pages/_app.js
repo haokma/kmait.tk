@@ -9,6 +9,7 @@ import * as gtag from "../lib/gtag";
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const [isDark, setIsDark] = useState(false);
+
   const handleDark = () => {
     setIsDark(!isDark);
     localStorage.setItem("dark", !isDark);
